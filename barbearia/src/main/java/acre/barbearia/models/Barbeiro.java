@@ -21,7 +21,7 @@ public class Barbeiro {
     @Column(nullable = false, updatable = false)
     private String nomeBarbeiro;
 
-    @OneToMany(mappedBy = "barbeiro", cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Corte> cortesDoBarbeiro;
 
     public Long getId() {
