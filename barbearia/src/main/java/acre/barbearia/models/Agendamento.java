@@ -22,7 +22,7 @@ public class Agendamento {
     private Long id;
 
     @OneToOne
-    private Usuario usuario;
+    private Usuario usuarioDoAgendamento;
 
     @OneToMany
     private List<Barbeiro> barbeirosDoAgendamento;
@@ -50,12 +50,12 @@ public class Agendamento {
         this.id = id;
     }
 
-    public Usuario getUsuario() {
-        return usuario;
+    public Usuario getUsuarioDoAgendamento() {
+        return usuarioDoAgendamento;
     }
 
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
+    public void setUsuarioDoAgendamento(Usuario usuario) {
+        this.usuarioDoAgendamento = usuario;
     }
 
     public List<Barbeiro> getBarbeirosDoAgendamento() {
