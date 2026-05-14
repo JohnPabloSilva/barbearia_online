@@ -1,7 +1,7 @@
 package acre.barbearia.models;
 
+import java.io.Serializable;
 import java.util.List;
-
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -11,7 +11,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 
 @Entity
-public class Barbeiro {
+public class Barbeiro implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
